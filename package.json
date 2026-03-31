@@ -1,0 +1,51 @@
+{
+  "name": "skillbox-cli",
+  "version": "0.1.0",
+  "description": "A CLI tool to manage AI tool skills/plugins (Claude Code, Cursor, Copilot, OpenClaw)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "skillbox": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "keywords": [
+    "skill",
+    "skills",
+    "skill-manager",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "copilot",
+    "cli",
+    "plugin-manager",
+    "ai-skill-manager"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "conf": "^13.0.0",
+    "ink": "^4.4.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.3",
+    "tsup": "^8.2.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
