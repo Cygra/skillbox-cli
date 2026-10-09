@@ -1,0 +1,16 @@
+import { defineConfig } from 'tsup';
+
+export default defineConfig({
+  entry: ['src/index.ts'],
+  format: ['esm'],
+  target: 'node18',
+  banner: {
+    js: '#!/usr/bin/env node',
+  },
+  clean: true,
+  minify: false,
+  sourcemap: false,
+  splitting: false,
+  treeshake: true,
+  tsconfig: './tsconfig.json',
+});
